@@ -1,0 +1,234 @@
+object frmNewForm: TfrmNewForm
+  Left = 50
+  Top = 50
+  AutoScroll = False
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Main Panel'
+  ClientHeight = 404
+  ClientWidth = 234
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = True
+  PopupMenu = MainForm.DesignerPopup
+  Visible = True
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnResize = FormResize
+  EVT_CLOSE = 'OnClose'
+  Wx_ICON.Data = {07544269746D617000000000}
+  Wx_Name = 'wxMainPanelDlg'
+  Wx_IDName = 'ID_DIALOG1'
+  Wx_IDValue = 1000
+  Wx_Class = 'wxDialog'
+  Wx_Center = False
+  Wx_Hidden = False
+  Wx_SizeToContents = True
+  Wx_GeneralStyle = []
+  Wx_DialogStyle = [wxCAPTION, wxSYSTEM_MENU, wxDIALOG_NO_PARENT, wxMINIMIZE_BOX, wxCLOSE_BOX]
+  Wx_Border = 0
+  Wx_BorderAlignment = []
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MasterButton: TWxButton
+    Left = 16
+    Top = 16
+    Width = 93
+    Height = 28
+    Caption = 'Master Panel'
+    TabOrder = 0
+    EVT_BUTTON = 'MasterButtonClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_MASTERBUTTON'
+    Wx_IDValue = 1007
+    Wx_Height = 28
+    Wx_Width = 93
+  end
+  object SecondaryButton: TWxButton
+    Left = 128
+    Top = 16
+    Width = 91
+    Height = 29
+    Caption = 'Secondary Panel'
+    TabOrder = 1
+    EVT_BUTTON = 'SecondaryButtonClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_SECONDARYBUTTON'
+    Wx_IDValue = 1008
+    Wx_Height = 29
+    Wx_Width = 91
+  end
+  object TestButton: TWxButton
+    Left = 15
+    Top = 62
+    Width = 93
+    Height = 26
+    Caption = 'Test Panel'
+    TabOrder = 2
+    EVT_BUTTON = 'TestButtonClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_TESTBUTTON'
+    Wx_IDValue = 1009
+    Wx_Height = 26
+    Wx_Width = 93
+  end
+  object ExitButton: TWxButton
+    Left = 128
+    Top = 62
+    Width = 91
+    Height = 26
+    Caption = 'Exit'
+    TabOrder = 3
+    EVT_BUTTON = 'ExitButtonClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_EXITBUTTON'
+    Wx_IDValue = 1010
+    Wx_Height = 26
+    Wx_Width = 91
+  end
+  object wxRadioBoxHour: TWxRadioBox
+    Left = 15
+    Top = 100
+    Width = 84
+    Height = 252
+    Caption = 'Hour'
+    MajorDimension = 2
+    Orientation = wxdVertical
+    Items.Strings = (
+      '0'
+      '1'
+      '2'
+      '3'
+      '4'
+      '5'
+      '6'
+      '7'
+      '8'
+      '9'
+      '10'
+      '11'
+      '12'
+      '13'
+      '14'
+      '15'
+      '16'
+      '17'
+      '18'
+      '19'
+      '20'
+      '21'
+      '22'
+      '23')
+    TabOrder = 4
+    EVT_RADIOBOX = 'OnTimeUpdated'
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxRadioBox'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EventList.Strings = (
+      'EVT_RADIOBOX:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXRADIOBOXHOUR'
+    Wx_IDValue = 1015
+    Wx_RadioBoxStyle = wxRA_SPECIFY_COLS
+    Wx_Selection = 0
+  end
+  object wxRadioBoxMinute: TWxRadioBox
+    Left = 128
+    Top = 100
+    Width = 51
+    Height = 252
+    Caption = 'Minute'
+    Orientation = wxdVertical
+    Items.Strings = (
+      '00'
+      '05'
+      '10'
+      '15'
+      '20'
+      '25'
+      '30'
+      '35'
+      '40'
+      '45'
+      '50'
+      '55')
+    TabOrder = 5
+    EVT_RADIOBOX = 'OnTimeUpdated'
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxRadioBox'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EventList.Strings = (
+      'EVT_RADIOBOX:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_IDName = 'ID_WXRADIOBOXMINUTE'
+    Wx_IDValue = 1016
+    Wx_RadioBoxStyle = wxRA_SPECIFY_COLS
+    Wx_Selection = 0
+  end
+  object CurrentTime: TWxStaticText
+    Left = 15
+    Top = 371
+    Width = 208
+    Height = 22
+    AutoSize = False
+    TabOrder = 6
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxStaticText'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_CURRENTTIME'
+    Wx_IDValue = 1017
+    Wx_LabelStyle = [wxST_NO_AUTORESIZE]
+  end
+end

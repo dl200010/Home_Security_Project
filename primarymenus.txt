@@ -1,0 +1,82 @@
+DisplayOwnerMenu()
+DisplayPermanentMenu()
+DisplayTemporaryMenu()
+-----MAIN-----
+1. Settings
+2. Enable/Disable
+3. Logout
+-----MAIN------
+Settings()
+1       -----SETTINGS-----
+        1. Update User Access Codes And Schedules
+        2. Add/Remove Users
+        3. Back
+        ------SETTINGS------
+        UpdateUsers()        
+        1       -----UPDATE-USER-----
+                        SelectPerm()
+                        ChangeCode()
+                1. Update Permament User Code
+                        SelectTemp()
+                        ChangeCode()
+                2. Update Temporary User Code
+                        SelectTemp()
+                        SetTempTime()
+                3. Update Temporary User Schedule
+                4. Back
+                ------UPDATE-USER------
+        AddRemoveUsers()
+        2       ----ADD-REMOVE-USERS----
+                        AddPerm()
+                1. Add Permament User
+                        SelectPerm()
+                        RemovePerm()
+                2. Remove Permament User
+                        AddTemp()
+                3. Add Temporary User
+                        SelectTemp()
+                        RemoveTemp()
+                4. Remove Temporary User
+                5. Back
+                -----ADD-REMOVE-USERS-----
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+SelectRoom()
+2       -----SELECT-ROOM-----
+        1. Garage
+        2. Family Room
+        3. Kitchen
+        4. Dinning Room
+        5. Bedroom
+        6. Bathroom
+        7. Office
+        8. Back
+        ------SELECT-ROOM------
+        SelectSensor()
+                -----SELECT-SENSOR-----
+                1. Fire
+                2. Security
+                3. CO
+                4. Back
+                ------SELECT-SENSOR------
+                EnableDisable()
+                        -----ENABLE-DISABLE-----
+                                EnableSensor()
+                        1. Enable
+                                DisableSensor()
+                        2. Disable
+                        3. Back
+                        ------ENABLE-DISABLE------
+
+

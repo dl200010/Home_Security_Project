@@ -1,0 +1,324 @@
+object frmNewForm: TfrmNewForm
+  Left = 8
+  Top = 8
+  AutoScroll = False
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Secondary Panel'
+  ClientHeight = 400
+  ClientWidth = 234
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = True
+  PopupMenu = MainForm.DesignerPopup
+  Visible = True
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnResize = FormResize
+  EVT_CLOSE = 'OnClose'
+  Wx_ICON.Data = {07544269746D617000000000}
+  Wx_Name = 'wxSecondaryPanelDlg'
+  Wx_IDName = 'ID_DIALOG1'
+  Wx_IDValue = 1000
+  Wx_Class = 'wxDialog'
+  Wx_Center = True
+  Wx_Hidden = False
+  Wx_SizeToContents = True
+  Wx_GeneralStyle = []
+  Wx_DialogStyle = [wxCAPTION, wxSYSTEM_MENU, wxDIALOG_NO_PARENT, wxMINIMIZE_BOX, wxCLOSE_BOX]
+  Wx_Border = 0
+  Wx_BorderAlignment = []
+  PixelsPerInch = 96
+  TextHeight = 13
+  object OutputCtrl: TWxRichTextCtrl
+    Left = 20
+    Top = 22
+    Width = 196
+    Height = 149
+    BevelInner = bvNone
+    BevelOuter = bvNone
+    Lines.Strings = (
+      'Enter access code.\n')
+    ScrollBars = ssVertical
+    TabOrder = 0
+    EVT_UPDATE_UI = 'OutputCtrlUpdateUI'
+    Wx_BGColor = clBlack
+    Wx_Class = 'wxRichTextCtrl'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_RichTextStyle = []
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = [wxVSCROLL]
+    Wx_IDName = 'ID_OUTPUTCTRL'
+    Wx_IDValue = 1067
+    Wx_MaxLength = 0
+  end
+  object ButtonOne: TWxButton
+    Left = 30
+    Top = 178
+    Width = 56
+    Height = 46
+    Caption = '1'
+    TabOrder = 1
+    EVT_BUTTON = 'ButtonOneClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_BUTTONONE'
+    Wx_IDValue = 1068
+    Wx_Height = 46
+    Wx_Width = 56
+  end
+  object ButtonTwo: TWxButton
+    Left = 92
+    Top = 178
+    Width = 56
+    Height = 46
+    Caption = '2'
+    TabOrder = 2
+    EVT_BUTTON = 'ButtonTwoClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_BUTTONTWO'
+    Wx_IDValue = 1069
+    Wx_Height = 46
+    Wx_Width = 56
+  end
+  object ButtonThree: TWxButton
+    Left = 157
+    Top = 178
+    Width = 56
+    Height = 46
+    Caption = '3'
+    TabOrder = 3
+    EVT_BUTTON = 'ButtonThreeClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_BUTTONTHREE'
+    Wx_IDValue = 1070
+    Wx_Height = 46
+    Wx_Width = 56
+  end
+  object ButtonFour: TWxButton
+    Left = 30
+    Top = 232
+    Width = 56
+    Height = 46
+    Caption = '4'
+    TabOrder = 4
+    EVT_BUTTON = 'ButtonFourClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_BUTTONFOUR'
+    Wx_IDValue = 1071
+    Wx_Height = 46
+    Wx_Width = 56
+  end
+  object ButtonFive: TWxButton
+    Left = 92
+    Top = 232
+    Width = 56
+    Height = 46
+    Caption = '5'
+    TabOrder = 5
+    EVT_BUTTON = 'ButtonFiveClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_BUTTONFIVE'
+    Wx_IDValue = 1072
+    Wx_Height = 46
+    Wx_Width = 56
+  end
+  object ButtonSix: TWxButton
+    Left = 157
+    Top = 232
+    Width = 56
+    Height = 46
+    Caption = '6'
+    TabOrder = 6
+    EVT_BUTTON = 'ButtonSixClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_BUTTONSIX'
+    Wx_IDValue = 1073
+    Wx_Height = 46
+    Wx_Width = 56
+  end
+  object ButtonSeven: TWxButton
+    Left = 30
+    Top = 287
+    Width = 56
+    Height = 46
+    Caption = '7'
+    TabOrder = 7
+    EVT_BUTTON = 'ButtonSevenClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_BUTTONSEVEN'
+    Wx_IDValue = 1074
+    Wx_Height = 46
+    Wx_Width = 56
+  end
+  object ButtonEight: TWxButton
+    Left = 92
+    Top = 287
+    Width = 56
+    Height = 46
+    Caption = '8'
+    TabOrder = 8
+    EVT_BUTTON = 'ButtonEightClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_BUTTONEIGHT'
+    Wx_IDValue = 1075
+    Wx_Height = 46
+    Wx_Width = 56
+  end
+  object ButtonNine: TWxButton
+    Left = 157
+    Top = 287
+    Width = 56
+    Height = 46
+    Caption = '9'
+    TabOrder = 9
+    EVT_BUTTON = 'ButtonNineClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_BUTTONNINE'
+    Wx_IDValue = 1076
+    Wx_Height = 46
+    Wx_Width = 56
+  end
+  object ButtonZero: TWxButton
+    Left = 30
+    Top = 340
+    Width = 56
+    Height = 46
+    Caption = '0'
+    TabOrder = 10
+    EVT_BUTTON = 'ButtonZeroClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_BUTTONZERO'
+    Wx_IDValue = 1077
+    Wx_Height = 46
+    Wx_Width = 56
+  end
+  object ButtonEnter: TWxButton
+    Left = 157
+    Top = 340
+    Width = 56
+    Height = 46
+    Caption = 'Enter'
+    TabOrder = 11
+    EVT_BUTTON = 'ButtonEnterClick'
+    Wx_BKColor = clBlack
+    Wx_ButtonStyle = []
+    Wx_Class = 'wxButton'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_Default = False
+    Wx_EventList.Strings = (
+      'EVT_BUTTON:OnClick'
+      'EVT_UPDATE_UI:OnUpdateUI')
+    Wx_FGColor = clBlack
+    Wx_GeneralStyle = []
+    Wx_Hidden = False
+    Wx_IDName = 'ID_BUTTONENTER'
+    Wx_IDValue = 1078
+    Wx_Height = 46
+    Wx_Width = 56
+  end
+end

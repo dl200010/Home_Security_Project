@@ -1,0 +1,530 @@
+object frmNewForm_1: TfrmNewForm
+  Left = 1000
+  Top = 50
+  AutoScroll = False
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Test Panel'
+  ClientHeight = 464
+  ClientWidth = 237
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = True
+  PopupMenu = MainForm.DesignerPopup
+  Visible = True
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnResize = FormResize
+  EVT_CLOSE = 'OnClose'
+  Wx_ICON.Data = {07544269746D617000000000}
+  Wx_Name = 'wxTestPanelDlg'
+  Wx_IDName = 'ID_DIALOG1'
+  Wx_IDValue = 1000
+  Wx_Class = 'wxDialog'
+  Wx_Center = False
+  Wx_Hidden = False
+  Wx_SizeToContents = True
+  Wx_GeneralStyle = []
+  Wx_DialogStyle = [wxCAPTION, wxSYSTEM_MENU, wxDIALOG_NO_PARENT, wxMINIMIZE_BOX, wxCLOSE_BOX]
+  Wx_Border = 0
+  Wx_BorderAlignment = []
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Sensors: TWxNotebook
+    Left = 0
+    Top = 0
+    Width = 237
+    Height = 464
+    ActivePage = FireSensors
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    Wx_Class = 'wxNotebook'
+    Wx_ControlOrientation = wxControlVertical
+    Wx_EventList.Strings = (
+      'EVT_UPDATE_UI:OnUpdateUI'
+      'EVT_NOTEBOOK_PAGE_CHANGED:OnPageChanged'
+      'EVT_NOTEBOOK_PAGE_CHANGING:OnPageChanging')
+    Wx_IDName = 'ID_SENSORS'
+    Wx_IDValue = 1001
+    Wx_Hidden = False
+    Wx_NoteBookStyle = []
+    Wx_GeneralStyle = []
+    object FireSensors: TWxNoteBookPage
+      Caption = 'Fire Sensors'
+      Wx_BKColor = clBlack
+      Wx_Class = 'wxPanel'
+      Wx_ControlOrientation = wxControlVertical
+      Wx_Default = False
+      Wx_EventList.Strings = (
+        'EVT_UPDATE_UI:OnUpdateUI')
+      Wx_FGColor = clBlack
+      Wx_GeneralStyle = []
+      Wx_Hidden = False
+      Wx_IDName = 'ID_FIRESENSORS'
+      Wx_IDValue = 1003
+      object G_Fire_Check: TWxCheckBox
+        Left = 75
+        Top = 51
+        Width = 97
+        Height = 17
+        Caption = 'Garage'
+        TabOrder = 0
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_G_FIRE_CHECK'
+        Wx_IDValue = 1142
+      end
+      object K_Fire_Check: TWxCheckBox
+        Left = 75
+        Top = 76
+        Width = 97
+        Height = 17
+        Caption = 'Kitchen'
+        TabOrder = 1
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_K_FIRE_CHECK'
+        Wx_IDValue = 1143
+      end
+      object D_Fire_Check: TWxCheckBox
+        Left = 75
+        Top = 99
+        Width = 97
+        Height = 17
+        Caption = 'Dining Room'
+        TabOrder = 2
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_D_FIRE_CHECK'
+        Wx_IDValue = 1144
+      end
+      object F_Fire_Check: TWxCheckBox
+        Left = 75
+        Top = 125
+        Width = 97
+        Height = 17
+        Caption = 'Family Room'
+        TabOrder = 3
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_F_FIRE_CHECK'
+        Wx_IDValue = 1145
+      end
+      object Bed_Fire_Check: TWxCheckBox
+        Left = 75
+        Top = 149
+        Width = 97
+        Height = 17
+        Caption = 'Bedroom'
+        TabOrder = 4
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_BED_FIRE_CHECK'
+        Wx_IDValue = 1146
+      end
+      object Bath_Fire_Check: TWxCheckBox
+        Left = 75
+        Top = 174
+        Width = 97
+        Height = 17
+        Caption = 'Bathroom'
+        TabOrder = 5
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_BATH_FIRE_CHECK'
+        Wx_IDValue = 1147
+      end
+      object O_Fire_Check: TWxCheckBox
+        Left = 75
+        Top = 197
+        Width = 97
+        Height = 17
+        Caption = 'Office'
+        TabOrder = 6
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_O_FIRE_CHECK'
+        Wx_IDValue = 1148
+      end
+      object TestButtonFire: TWxButton
+        Left = 60
+        Top = 372
+        Width = 98
+        Height = 33
+        Caption = 'Test'
+        TabOrder = 7
+        EVT_BUTTON = 'TestClicked'
+        Wx_BKColor = clBlack
+        Wx_ButtonStyle = []
+        Wx_Class = 'wxButton'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_Default = False
+        Wx_EventList.Strings = (
+          'EVT_BUTTON:OnClick'
+          'EVT_UPDATE_UI:OnUpdateUI')
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_TESTBUTTONFIRE'
+        Wx_IDValue = 1205
+        Wx_Height = 33
+        Wx_Width = 98
+      end
+    end
+    object COSensors: TWxNoteBookPage
+      Caption = 'CO Sensors'
+      Wx_BKColor = clBlack
+      Wx_Class = 'wxPanel'
+      Wx_ControlOrientation = wxControlVertical
+      Wx_Default = False
+      Wx_EventList.Strings = (
+        'EVT_UPDATE_UI:OnUpdateUI')
+      Wx_FGColor = clBlack
+      Wx_GeneralStyle = []
+      Wx_Hidden = False
+      Wx_IDName = 'ID_COSENSORS'
+      Wx_IDValue = 1004
+      object G_CO_Check: TWxCheckBox
+        Left = 75
+        Top = 51
+        Width = 97
+        Height = 17
+        Caption = 'Garage'
+        TabOrder = 0
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_G_CO_CHECK'
+        Wx_IDValue = 1170
+      end
+      object K_CO_Check: TWxCheckBox
+        Left = 75
+        Top = 76
+        Width = 97
+        Height = 17
+        Caption = 'Kitchen'
+        TabOrder = 1
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_K_CO_CHECK'
+        Wx_IDValue = 1171
+      end
+      object D_CO_Check: TWxCheckBox
+        Left = 75
+        Top = 99
+        Width = 97
+        Height = 17
+        Caption = 'Dining Room'
+        TabOrder = 2
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_D_CO_CHECK'
+        Wx_IDValue = 1172
+      end
+      object F_CO_Check: TWxCheckBox
+        Left = 75
+        Top = 125
+        Width = 97
+        Height = 17
+        Caption = 'Family Room'
+        TabOrder = 3
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_F_CO_CHECK'
+        Wx_IDValue = 1173
+      end
+      object Bed_CO_Check: TWxCheckBox
+        Left = 75
+        Top = 149
+        Width = 97
+        Height = 17
+        Caption = 'Bedroom'
+        TabOrder = 4
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_BED_CO_CHECK'
+        Wx_IDValue = 1174
+      end
+      object Bath_CO_Check: TWxCheckBox
+        Left = 75
+        Top = 174
+        Width = 97
+        Height = 17
+        Caption = 'Bathroom'
+        TabOrder = 5
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_BATH_CO_CHECK'
+        Wx_IDValue = 1175
+      end
+      object O_CO_Check: TWxCheckBox
+        Left = 75
+        Top = 197
+        Width = 97
+        Height = 17
+        Caption = 'Office'
+        TabOrder = 6
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_O_CO_CHECK'
+        Wx_IDValue = 1176
+      end
+      object TestButtonCO: TWxButton
+        Left = 60
+        Top = 372
+        Width = 98
+        Height = 33
+        Caption = 'Test'
+        TabOrder = 7
+        EVT_BUTTON = 'TestClicked'
+        Wx_BKColor = clBlack
+        Wx_ButtonStyle = []
+        Wx_Class = 'wxButton'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_Default = False
+        Wx_EventList.Strings = (
+          'EVT_BUTTON:OnClick'
+          'EVT_UPDATE_UI:OnUpdateUI')
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_TESTBUTTONCO'
+        Wx_IDValue = 1206
+        Wx_Height = 33
+        Wx_Width = 98
+      end
+    end
+    object SecuritySensors: TWxNoteBookPage
+      Caption = 'Security Sensors'
+      Wx_BKColor = clBlack
+      Wx_Class = 'wxPanel'
+      Wx_ControlOrientation = wxControlVertical
+      Wx_Default = False
+      Wx_EventList.Strings = (
+        'EVT_UPDATE_UI:OnUpdateUI')
+      Wx_FGColor = clBlack
+      Wx_GeneralStyle = []
+      Wx_Hidden = False
+      Wx_IDName = 'ID_SECURITYSENSORS'
+      Wx_IDValue = 1006
+      object G_Security_Check: TWxCheckBox
+        Left = 75
+        Top = 51
+        Width = 97
+        Height = 17
+        Caption = 'Garage'
+        TabOrder = 0
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_G_SECURITY_CHECK'
+        Wx_IDValue = 1198
+      end
+      object K_Security_Check: TWxCheckBox
+        Left = 75
+        Top = 76
+        Width = 97
+        Height = 17
+        Caption = 'Kitchen'
+        TabOrder = 1
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_K_SECURITY_CHECK'
+        Wx_IDValue = 1199
+      end
+      object D_Security_Check: TWxCheckBox
+        Left = 75
+        Top = 99
+        Width = 97
+        Height = 17
+        Caption = 'Dining Room'
+        TabOrder = 2
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_D_SECURITY_CHECK'
+        Wx_IDValue = 1200
+      end
+      object F_Security_Check: TWxCheckBox
+        Left = 75
+        Top = 125
+        Width = 97
+        Height = 17
+        Caption = 'Family Room'
+        TabOrder = 3
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_F_SECURITY_CHECK'
+        Wx_IDValue = 1201
+      end
+      object Bed_Security_Check: TWxCheckBox
+        Left = 75
+        Top = 149
+        Width = 97
+        Height = 17
+        Caption = 'Bedroom'
+        TabOrder = 4
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_BED_SECURITY_CHECK'
+        Wx_IDValue = 1202
+      end
+      object Bath_Security_Check: TWxCheckBox
+        Left = 75
+        Top = 174
+        Width = 97
+        Height = 17
+        Caption = 'Bathroom'
+        TabOrder = 5
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_BATH_SECURITY_CHECK'
+        Wx_IDValue = 1203
+      end
+      object O_Security_Check: TWxCheckBox
+        Left = 75
+        Top = 197
+        Width = 97
+        Height = 17
+        Caption = 'Office'
+        TabOrder = 6
+        Wx_BGColor = clBlack
+        Wx_CheckBoxStyle = []
+        Wx_Class = 'wxCheckBox'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_O_SECURITY_CHECK'
+        Wx_IDValue = 1204
+      end
+      object TestButtonSecurity: TWxButton
+        Left = 60
+        Top = 372
+        Width = 98
+        Height = 33
+        Caption = 'Test'
+        TabOrder = 7
+        EVT_BUTTON = 'TestClicked'
+        Wx_BKColor = clBlack
+        Wx_ButtonStyle = []
+        Wx_Class = 'wxButton'
+        Wx_ControlOrientation = wxControlVertical
+        Wx_Default = False
+        Wx_EventList.Strings = (
+          'EVT_BUTTON:OnClick'
+          'EVT_UPDATE_UI:OnUpdateUI')
+        Wx_FGColor = clBlack
+        Wx_GeneralStyle = []
+        Wx_Hidden = False
+        Wx_IDName = 'ID_TESTBUTTONSECURITY'
+        Wx_IDValue = 1207
+        Wx_Height = 33
+        Wx_Width = 98
+      end
+    end
+  end
+end
