@@ -1,7 +1,7 @@
 Just a fake security system I made for college. Not really useful, but fun.
 
 Used wxDev-C++ to create
-https://sourceforge.net/projects/wxdsgn/files/wxDev-C%2B%2B/Version%206/
+http://wxdsgn.sourceforge.net/
 ----------------------------------------------------------------------------
 
    Copyright 2019 Christopher Dangerfield <DL200010@gmail.com>
