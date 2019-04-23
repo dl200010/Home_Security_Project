@@ -1,5 +1,5 @@
 /* XPM */
-static char *D_SecurityBitmap_XPM[]={
+static const char *D_SecurityBitmap_XPM[]={
 /* D_SecurityBitmap */
 "70 70 3500 2",
 "      c None",

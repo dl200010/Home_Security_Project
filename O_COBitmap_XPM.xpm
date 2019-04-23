@@ -1,5 +1,5 @@
 /* XPM */
-static char *O_COBitmap_XPM[]={
+static const char *O_COBitmap_XPM[]={
 /* O_COBitmap */
 "70 70 3106 2",
 "      c None",

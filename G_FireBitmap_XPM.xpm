@@ -1,5 +1,5 @@
 /* XPM */
-static char *G_FireBitmap_XPM[]={
+static const char *G_FireBitmap_XPM[]={
 /* G_FireBitmap */
 "70 70 3549 2",
 "      c None",

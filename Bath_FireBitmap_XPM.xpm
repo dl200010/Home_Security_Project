@@ -1,5 +1,5 @@
 /* XPM */
-static char *Bath_FireBitmap_XPM[]={
+static const char *Bath_FireBitmap_XPM[]={
 /* Bath_FireBitmap */
 "70 70 3549 2",
 "      c None",
